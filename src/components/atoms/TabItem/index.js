@@ -2,7 +2,7 @@ import React from 'react'
 import { StyleSheet,TouchableOpacity, View } from 'react-native'
 import { IconBag, IconBagActive, IconHistory, IconHistoryActive, IconHome, IconHomeActive, IconProfile, IconQrCode } from '../../../assests/icon'
 
-const TabItem = ({type,active, onPress, onLongPress}) => {
+const TabItem = ({type,active, onPress, onLongPress,navigation}) => {
     const Icon = () => {
         if(type === 'Home'){
             return active ? <IconHomeActive/> : <IconHome/>;

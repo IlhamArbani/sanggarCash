@@ -1,10 +1,14 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
+import { Input } from '../../components'
 
 const Pembayaran = () => {
     return (
         <View>
-            <Text>Pembayaran Page</Text>
+            <View></View>
+            <View>
+                <Input label="No. Handphone"/>
+            </View>
         </View>
     )
 }
@@ -12,3 +16,4 @@ const Pembayaran = () => {
 export default Pembayaran
 
 const styles = StyleSheet.create({})
+

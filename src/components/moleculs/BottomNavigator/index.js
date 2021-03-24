@@ -24,10 +24,12 @@ const BottomNavigator = ({ state, descriptors, navigation }) => {
           });
 
           if (!isFocused && !event.defaultPrevented) {
-            navigation.navigate(route.name);
+            if(route.name == 'Pembayaran'){
+              return navigation.navigate('Scan');
+            }
+            return navigation.navigate(route.name);
           }
         };
-
         const onLongPress = () => {
           navigation.emit({
             type: 'tabLongPress',
