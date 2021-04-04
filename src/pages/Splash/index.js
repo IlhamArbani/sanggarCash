@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { Image, StyleSheet, Text, View } from 'react-native'
+import { LogoWhite } from '../../assests'
 
 const Splash = ({navigation}) => {
     useEffect(()=>{
@@ -9,7 +10,7 @@ const Splash = ({navigation}) => {
     },[])
     return (
         <View style={styles.page}>
-            <Text style={styles.title}>Sanggar Cash</Text>
+            <Image style={styles.image} source={LogoWhite}/>
         </View>
     )
 }
@@ -18,7 +19,7 @@ export default Splash
 
 const styles = StyleSheet.create({
     page:{
-        backgroundColor:'white',
+        backgroundColor:'#26704F',
         flex:1,
         alignItems:'center',
         justifyContent:'center'
@@ -26,5 +27,9 @@ const styles = StyleSheet.create({
     title:{
         fontSize:20,
         fontWeight:'600'
+    },
+    image:{
+        width:311,
+        height:216
     }
 })

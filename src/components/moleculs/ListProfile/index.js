@@ -1,24 +1,21 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import { IcMoney, IconBag, IconHistory, IcPencil } from '../../../assests'
+import { IcMoney, IconBag, IconHistory, IcPencil, IcSetting } from '../../../assests'
 import { Button } from '../../atoms'
 
-const ListProfile = ({label}) => {
+const ListProfile = ({label,onPress}) => {
     const Side = () => {
         if(label === 'Saldo'){
             return <Text style={{fontSize:14}}>Rp 123456</Text>
         }
-        return <Button type="icon-only"/>
+        return <Button type="icon-only" onPress={onPress}/>
     }
     const Icon = () => {
         if(label === 'Saldo'){
             return <IcMoney/>
         }
-        if(label === "Riwayat Transaksi"){
-            return <IconHistory/>
-        }
-        if(label === "Promo Berlangsung"){
-            return <IconBag/>
+        if(label === "Setting"){
+            return <IcSetting/>
         }
         if(label === "Edit Profile"){
             return <IcPencil/>

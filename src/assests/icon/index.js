@@ -1,15 +1,17 @@
-import IconHome from './ic-home.svg';
-import IconHomeActive from './ic-homeActive.svg';
-import IconHistory from './ic-history.svg';
-import IconHistoryActive from './ic-historyActive.svg';
+import IconHome from './home.svg';
+import IconHomeActive from './home_filled.svg';
+import IconHistory from './history.svg';
+import IconHistoryActive from './history_filled.svg';
 import IconQrCode from './ic-qrCode.svg';
-import IconBag from './ic-bag.svg';
-import IconBagActive from './ic-bagActive.svg';
-import IconProfile from './ic-profile.svg';
-import IcBackArrow from './ic-back.svg';
+import IconBag from './discount.svg';
+import IconBagActive from './discount_filled.svg';
+import IconProfile from './account.svg';
+import IcBackArrow from './ic-back-dark.svg';
 import IcBell from './ic-bell.svg';
-import IcMoney from './ic-money.svg';
+import IcMoney from './wallet.svg';
 import IcNext from './ic-next.svg';
-import IcPencil from './ic-pencil.svg'
+import IcPencil from './ic-pencil.svg';
+import IcSetting from './ic-settings.svg';
+import IcAddPhoto from './ic-add-photo.svg'
 
-export {IconHome,IconHomeActive,IconHistory,IconHistoryActive,IconQrCode,IconBag,IconBagActive,IconProfile,IcBackArrow,IcBell,IcMoney,IcNext,IcPencil};
+export {IconHome,IconHomeActive,IconHistory,IconHistoryActive,IconQrCode,IconBag,IconBagActive,IconProfile,IcBackArrow,IcBell,IcMoney,IcNext,IcPencil,IcSetting,IcAddPhoto};

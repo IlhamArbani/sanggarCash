@@ -2,6 +2,7 @@ import React from 'react'
 import { ImageBackground, StyleSheet, Text, View } from 'react-native'
 import { ILHome } from '../../assests/ilustration'
 import { ListMitra } from '../../components'
+import { colors } from '../../utils'
 
 
 const Home = () => {
@@ -9,15 +10,15 @@ const Home = () => {
         <View style={styles.page}>
             <ImageBackground source={ILHome} style={styles.background}>
                 <View style={styles.mainText}>
-                    <Text style={styles.title}>Sanggar Cash</Text>
+                    <Text style={styles.title}>Saldo Anda</Text>
                     <Text style={styles.saldo}>Rp 1,345.00</Text>
                 </View>
             </ImageBackground>
             <View style={styles.content}>
                 <Text style={styles.contentTitle}>Mitra Kami</Text>
-                <ListMitra/>
-                <ListMitra/>
-                <ListMitra/>
+                <ListMitra title="Resto Gori" desc="Jl. Kenangan Berasamanay" type="mitra" width={80} height={80} rounded={true}/>
+                <ListMitra title="Resto Gori" desc="Jl. Kenangan Berasamanay" type="mitra" width={80} height={80} rounded={true}/>
+                <ListMitra title="Resto Gori" desc="Jl. Kenangan Berasamanay" type="mitra" width={80} height={80} rounded={true}/>
             </View>
         </View>
     )
@@ -47,10 +48,10 @@ const styles = StyleSheet.create({
     },
     mainText:{paddingBottom:20},
     title:{
-        fontSize:16
+        fontSize:16,
     },
     saldo:{
-        fontSize:32
+        fontSize:32,
     },
     contentTitle:{
         fontSize:24,

@@ -1,11 +1,11 @@
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import { IcNext } from '../../../assests'
+import { IcBackArrow, IcNext } from '../../../assests'
 
 const IconOnly = ({icon,onPress}) => {
     const Icon = () => {
-        if(icon === 'next'){
-            return <IcNext/>
+        if(icon === 'back'){
+            return <IcBackArrow/>
         }
         return <IcNext/>
     }

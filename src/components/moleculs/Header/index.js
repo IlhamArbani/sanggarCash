@@ -1,12 +1,13 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { IcBackArrow } from '../../../assests'
+import { Button } from '../../atoms'
 
-const Header = () => {
+const Header = ({title,onPress}) => {
     return (
         <View style={styles.container}>
-            <IcBackArrow/>
-            <Text style={styles.text}>Riwayat Transaksi</Text>
+            <Button type="icon-only" icon="back" onPress={onPress}/>
+            <Text style={styles.text}>{title}</Text>
         </View>
     )
 }

@@ -1,13 +1,15 @@
 import React from 'react'
-import { StyleSheet, View } from 'react-native'
+import { Image, StyleSheet, View } from 'react-native'
+import { DummyPromo } from '../../assests'
 import { Header, ListMitra } from '../../components'
 
 const Tas = () => {
     return (
             <View style={styles.page}>
-                <ListMitra/>
-                <ListMitra/>
-                <ListMitra/>
+                    <Image style={styles.promo} source={DummyPromo}/>
+                    <Image style={styles.promo} source={DummyPromo}/>
+                    <Image style={styles.promo} source={DummyPromo}/>
+                    <Image style={styles.promo} source={DummyPromo}/>
             </View>
     )
 }
@@ -17,7 +19,15 @@ export default Tas
 const styles = StyleSheet.create({
     page:{
         flex:1,
-        backgroundColor:'white'
+        backgroundColor:'white',
+        paddingHorizontal:16
+    },
+    promo:{
+        width:'100%',
+        height:'10%',
+        marginTop:16,
+        borderWidth:1,
+        borderColor:'#eaeaea'
     }
 })
 

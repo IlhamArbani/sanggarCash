@@ -1,6 +1,7 @@
 import React from 'react'
 import { StyleSheet,TouchableOpacity, View } from 'react-native'
 import { IconBag, IconBagActive, IconHistory, IconHistoryActive, IconHome, IconHomeActive, IconProfile, IconQrCode } from '../../../assests/icon'
+import { colors } from '../../../utils'
 
 const TabItem = ({type,active, onPress, onLongPress,navigation}) => {
     const Icon = () => {
@@ -42,7 +43,7 @@ const styles = StyleSheet.create({
         zIndex:1,
         alignItems:'center',
         justifyContent:'center',
-        backgroundColor:'black',
+        backgroundColor:colors.primary,
         width:80,
         height:80,
         borderRadius:100,

@@ -1,15 +1,29 @@
 import React from 'react'
 import { StyleSheet, Text, View,Image } from 'react-native'
-import { ILMitra } from '../../../assests/ilustration'
+import { IcMoney } from '../../../assests'
+import { ILMitra, LogoGreen } from '../../../assests/ilustration'
 import { colors } from '../../../utils'
 
-const ListMitra = () => {
+const ListMitra = ({type,width,height,title,desc,rounded}) => {
+    const Logo = () =>{
+        if(type === 'mitra'){
+            return <Image source={ILMitra} style={styles.picture(width,height,rounded)}/>
+        }
+        if(type === 'saldo'){
+            return (
+                <View style={styles.picture(width,height,rounded)}>
+                    <IcMoney/>
+                </View>
+            )
+        }
+        return <Image source={ILMitra} style={styles.picture(width,height,rounded)}/>
+    }
     return (
         <View style={styles.container}>
-            <Image source={ILMitra} style={styles.picture}/>
+            <Logo/>
             <View>
-                <Text style={styles.title}>Resto Gori M</Text>
-                <Text style={styles.address}>Jln. Kenangan Bersamanya</Text>
+                <Text style={styles.title}>{title}</Text>
+                <Text style={styles.address}>{desc}</Text>
             </View> 
         </View>
     )
@@ -18,12 +32,12 @@ const ListMitra = () => {
 export default ListMitra
 
 const styles = StyleSheet.create({
-    picture:{
-        width:80,
-        height:60,
-        borderRadius:11,
+    picture: (width,height,rounded) => ({
+        width:width,
+        height:height,
+        borderRadius: rounded == true ? 11 : 0,
         marginRight:16
-    },
+    }),
     container:{
         flexDirection:'row',
         padding:16,

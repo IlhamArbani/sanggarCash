@@ -3,7 +3,7 @@ import { Image, StyleSheet, Text, View } from 'react-native'
 import { DummyQr } from '../../assests'
 import { ListProfile, UserDetail } from '../../components'
 
-const Profile = () => {
+const Profile = ({navigation}) => {
     return (
         <View style={styles.container}>
             <UserDetail/>
@@ -13,9 +13,8 @@ const Profile = () => {
             </View>
             <View style={styles.menu}>
                 <ListProfile label="Saldo"/>
-                <ListProfile label="Riwayat Transaksi"/>
-                <ListProfile label="Promo Berlangsung"/>
-                <ListProfile label="Edit Profile"/>
+                <ListProfile label="Edit Profile" onPress={() => navigation.navigate('EditProfile')}/>
+                <ListProfile label="Setting" onPress={() => navigation.navigate('Setting')}/>
             </View>
         </View>
     )
