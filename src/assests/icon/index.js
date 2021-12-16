@@ -13,5 +13,7 @@ import IcNext from './ic-next.svg';
 import IcPencil from './ic-pencil.svg';
 import IcSetting from './ic-settings.svg';
 import IcAddPhoto from './ic-add-photo.svg'
+import IcCheck from './Union.svg';
+import IcPlus from './plus.svg';
 
-export {IconHome,IconHomeActive,IconHistory,IconHistoryActive,IconQrCode,IconBag,IconBagActive,IconProfile,IcBackArrow,IcBell,IcMoney,IcNext,IcPencil,IcSetting,IcAddPhoto};
+export {IconHome,IconHomeActive,IconHistory,IconHistoryActive,IconQrCode,IconBag,IconBagActive,IconProfile,IcBackArrow,IcBell,IcMoney,IcNext,IcPencil,IcSetting,IcAddPhoto,IcCheck,IcPlus};

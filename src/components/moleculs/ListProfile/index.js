@@ -1,9 +1,13 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import { IcMoney, IconBag, IconHistory, IcPencil, IcSetting } from '../../../assests'
+import { IcMoney, IcPencil, IcSetting } from '../../../assests'
 import { Button } from '../../atoms'
+import ListSetting from './ListSetting'
 
-const ListProfile = ({label,onPress}) => {
+const ListProfile = ({label,onPress,inPage,type}) => {
+    if(inPage === 'setting'){
+        return <ListSetting label={label} type={type} onPress={onPress}/>
+    }
     const Side = () => {
         if(label === 'Saldo'){
             return <Text style={{fontSize:14}}>Rp 123456</Text>

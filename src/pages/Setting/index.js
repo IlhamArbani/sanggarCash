@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import { Button, Header } from '../../components'
+import { Button, Header, ListProfile } from '../../components'
 import { colors } from '../../utils'
 
 const Setting = ({navigation}) => {
@@ -9,22 +9,9 @@ const Setting = ({navigation}) => {
             <Header title="Setting" onPress={() => navigation.goBack()}/>
             <View style={{justifyContent:'space-between',flex:1,paddingBottom:16}}>
                 <View>
-                    <View style={{flexDirection:'row',alignItems:'center',justifyContent:'space-between',paddingHorizontal:16,marginTop:20}}>
-                        <Text>Notifikasi</Text>
-                        <Button type="switch"/>
-                    </View>
-                    <View style={{flexDirection:'row',alignItems:'center',justifyContent:'space-between',paddingHorizontal:16,marginTop:20}}>
-                        <Text>Akun Terhubung</Text>
-                        <Button type="icon-only"/>
-                    </View>
-                    <View style={{flexDirection:'row',alignItems:'center',justifyContent:'space-between',paddingHorizontal:16,marginTop:20}}>
-                        <Text>Daftar Bank</Text>
-                        <Button type="icon-only"/>
-                    </View>
-                    <View style={{flexDirection:'row',alignItems:'center',justifyContent:'space-between',paddingHorizontal:16,marginTop:20}}>
-                        <Text>Prioritas Berita</Text>
-                        <Button type="icon-only"/>
-                    </View>
+                    <ListProfile inPage='setting' label='Notifikasi' type='switch'/>
+                    <ListProfile inPage='setting' label='Akun Terhubung'/>
+                    <ListProfile inPage='setting' label='Daftar Bank'/>
                 </View>
                 <View style={{paddingHorizontal:16}}>
                     <Button title="Sign Out" onPress={() => navigation.replace('Login')}/>

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Image, StyleSheet, View } from 'react-native'
 import { DummyPromo } from '../../assests'
-import { Header, ListMitra } from '../../components'
 
 const Tas = () => {
     return (
@@ -24,7 +23,7 @@ const styles = StyleSheet.create({
     },
     promo:{
         width:'100%',
-        height:'10%',
+        height:120,
         marginTop:16,
         borderWidth:1,
         borderColor:'#eaeaea'

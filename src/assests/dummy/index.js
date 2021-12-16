@@ -1,4 +1,4 @@
 import DummyQr from './qrCode.png';
-import DummyPromo from './promo.jpg';
+import DummyPromo from './image-6.png';
 
 export {DummyQr,DummyPromo};

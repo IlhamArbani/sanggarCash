@@ -10,5 +10,8 @@ import SignUp from './SignUp';
 import EditProfile from './EditProfile'
 import Setting from './Setting';
 import Konfirmasi from './Konfirmasi';
+import LupaPassword from './LupaPassword';
+import KonfirmasiEmail from './KonfirmasiEmail';
 
-export {Splash,Login,Home,History,Pembayaran,Tas,Profile,Scan,SignUp,EditProfile,Setting,Konfirmasi};
+export {Splash,Login,Home,History,Pembayaran,Tas,Profile,Scan,SignUp,EditProfile,Setting,Konfirmasi,
+        LupaPassword,KonfirmasiEmail};

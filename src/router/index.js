@@ -1,6 +1,6 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
-import { EditProfile, History, Home, Konfirmasi, Login, Pembayaran, Profile, Scan, Setting, SignUp, Splash, Tas } from '../pages';
+import { EditProfile, History, Home, Konfirmasi, KonfirmasiEmail, Login, LupaPassword, Pembayaran, Profile, Scan, Setting, SignUp, Splash, Tas } from '../pages';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import { BottomNavigator } from '../components';
 
@@ -30,6 +30,8 @@ const Router = () => {
             <Stack.Screen name="EditProfile" component={EditProfile} options={{headerShown: false}}/>
             <Stack.Screen name="Setting" component={Setting} options={{headerShown: false}}/>
             <Stack.Screen name="Konfirmasi" component={Konfirmasi} options={{headerShown: false}}/>
+            <Stack.Screen name="LupaPassword" component={LupaPassword} options={{headerShown: false}}/>
+            <Stack.Screen name="KonfirmasiEmail" component={KonfirmasiEmail} options={{headerShown: false}}/>
         </Stack.Navigator>
     )
 }
